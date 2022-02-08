@@ -90,18 +90,68 @@
 // console.log(multiplication);
 
 //EBOB BULUCU
-let userNumberProduct1=parseInt(prompt("enter your number1: "))
-let userNumberProduct2=parseInt(prompt("enter your number2: "))
+// let userNumberProduct1=parseInt(prompt("enter your number1: "))
+// let userNumberProduct2=parseInt(prompt("enter your number2: "))
 
-let i=2;
-let ebob=1;
-while(i<=userNumberProduct1&&i<=userNumberProduct2){
-    if(userNumberProduct1%i==0 &&userNumberProduct2%i==0){
-        ebob=i;
-    }
-    i++;
+// let i=2;
+// let ebob=1;
+// while(i<=userNumberProduct1&&i<=userNumberProduct2){
+//     if(userNumberProduct1%i==0 &&userNumberProduct2%i==0){
+//         ebob=i;
+//     }
+//     i++;
     
+// }
+// console.log(ebob);
+
+// let num1=parseInt(prompt("enter your number: "));
+// let num2=parseInt(prompt("enter your number: "));
+// let ebob=1;
+// for(let i=1;i<=num1&&i<=num2;i++){
+// if(num1%i==0&&num2%i==0){
+// ebob=i;
+// }
+// }
+// console.log(ebob);
+
+// if(ebob==1)
+// console.log("kendi aralarinda asaldir");
+
+//********* */ yazilan sayiya kadar olan asal sayilari yazdıran programi bulunuz
+
+// let userNumber =parseInt(prompt("please your integer number: "));
+// let asalmi=true;
+// for(let i=2;i<userNumber;i++){
+// for(let j=2;j<i;j++){
+//     if(i%j==0){
+//         asalmi=false;
+//         break;
+//     }
+// }
+// if(asalmi){
+//     console.log(i+" ");
+// }
+// asalmi=true;
+
+// }
+
+//1+2+4+7+11+16+20+23+25+26+28+31+35=229
+let artismiktari=0;
+for(let i=1;i<=35;i+=artismiktari){
+    console.log(i);
+if(artismiktari<5){
+    artismiktari++;
 }
-console.log(ebob);
+    
+
+
+else{
+    artismiktari--;
+}
+    
+
+
+
+}
 
 
