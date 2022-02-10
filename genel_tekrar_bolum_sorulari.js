@@ -135,28 +135,53 @@
 
 // }
 
-//1+2+4+7+11+16+20+23+25+26+28+31+35=229
-let artismiktari=0;
-let artismi=true;
-let sayac=1;
-for(let i=1;i<=35;i+=artismiktari){
-    console.log(i);
+// //1+2+4+7+11+16+20+23+25+26+28+31+35=229
+// let artismiktari=0;
+// let artismi=true;
+// let sayac=1;
+// for(let i=1;i<=35;i+=artismiktari){
+//     console.log(i);
    
-    if(artismiktari<5&&artismi==true){
-        artismiktari++;
-    }
-    else{
-         if(sayac<5){
-        artismiktari--;
-        artismi=false;
-        sayac++;
-        }
-        else{
-        artismi=true;
-        artismiktari++;
-      }
-    }
+//     if(artismiktari<5&&artismi==true){
+//         artismiktari++;
+//     }
+//     else{
+//          if(sayac<5){
+//         artismiktari--;
+//         artismi=false;
+//         sayac++;
+//         }
+//         else{
+//         artismi=true;
+//         artismiktari++;
+//       }
+//     }
     
+// }
+
+//tekrar deneme son soru
+
+let artismi=true;
+let artismikatri=0;
+let yazdir="";
+let sum=0;
+for(let i=1;i<=35;i+=artismikatri){
+  yazdir=yazdir+i+" + ";
+  sum+=i;
+  if(artismi==true && artismikatri<5){
+    artismikatri++;
+  }
+  else{
+    artismikatri--;
+    
+    if(artismikatri>0){
+      artismi=false;
+    }else{
+      artismi=true;
+      artismikatri+=2;
+    }
+  }
 }
+console.log(` ${yazdir} = ${sum}`);
 
 
