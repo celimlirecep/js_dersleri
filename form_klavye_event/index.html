@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .container{
+                width: 400px;
+                height: 200px;
+                background-color: teal;
+                padding: 2rem 2rem;
+                font-size: 2rem;
+                color: white;
+            }
+
+            .link, .link:visited{
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            }
+            .link :hover{
+                color: #333;
+            }
+            .yazi{
+                font-size: 2rem;
+            }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post" id="form">
+            <input id="ad" type="text" placeholder="adınız">
+            <button type="button">Normal Buton</button>
+            <button type="reset">Temizle</button>
+            <button type="submit">Gönder</button>
+            <select name="sehir" id="sehir">
+                <option value="1">istanbul</option>
+                <option value="2">Bursa</option>
+            </select>
+
+        </form>
+        <a href="#" 
+        class="link">Blog sitesi</a>
+        <p class="yazi" id="aktar">merhaba</p>
+    </div>
+    <script src="event.js"></script>
+</body>
+</html>
