@@ -1,0 +1,60 @@
+.baslik
+{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:red;
+    font-size: 50px;
+}
+
+.popup-main
+{
+    background-color: rgb(15, 100, 100,0.7);
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   margin: 0px;
+   padding: 40px;
+    width: auto;
+}
+button
+{
+    display: block;
+    
+}
+.ac-buton
+{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup
+{
+    margin-top: 150px;
+    background-color: aliceblue;
+    position: relative;
+    border: 5px;
+    height:500px;
+    
+   
+}
+
+.kapat-alt
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    right: 0ch;
+    
+}
+.kapat-ust
+{
+    display: flex;
+    position: absolute;
+    right: 0;
+}

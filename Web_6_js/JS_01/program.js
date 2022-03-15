@@ -347,5 +347,5 @@
 
 // console.log(rasgele);
 
-let i=0;
-console.log((i++));
+// let i=0;
+// console.log(++i);
