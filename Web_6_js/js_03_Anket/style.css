@@ -81,13 +81,10 @@ font-size: x-large;
 {
     width: 150px;
     height: 100px;
-    background-color: rgb(5, 5, 5);
-    border:10;
-    border-color: aliceblue;
-    border-style: dashed;
-    color: aliceblue;
+    background-color:aliceblue;
+    color: rgb(5, 5, 5);
     font-size: 30px;
-   
+    border-radius: 20px;
 }
 .question
 {
@@ -110,9 +107,11 @@ label
 {
     display: flex;
     justify-content: center;
+    
 }
-img{
+.resimamblem{
     width: 30%;
+    height: 180px;
 }
 span
 {
@@ -137,6 +136,118 @@ span
     justify-content: center;
     padding-bottom: 50px;
 }
+.logolar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.logo-baslik
+{
+    font-size: 70px;
+}
+
+.logo-bolumu
+{
+    /* genişliği 100 de 100 olarak görmüyor */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+    padding: none;
+    margin: none;
+}
+
+.ilksatir
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+
+.ilksatirsol
+{
+    background:linear-gradient(to top left,black,white);
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    width: 50%;
+    height: 200px;
+    margin: 10px 0px;
+    padding-left:50px ;
+    align-items: center;
+}
+
+.ilksatirsag
+{
+    background:linear-gradient(to top right,black,white);
+    display: flex;
+    flex-direction:row;
+    background-color: blueviolet;
+    width: 50%;
+    height: 200px;
+    margin: 10px 0px;
+    padding-left:50px ;
+    align-items: center;
+}
+.ikincisatir
+{
+    display: flex;
+    width: 100%;
+    height: 200px;
+   
+    
+}
+.ikincisatirsol
+{
+    
+    display: flex;
+    background:linear-gradient(to bottom left,black,white);
+    width: 50%;
+    height: 200px;
+    margin: 10px 0px;
+    padding-left:50px ;
+    align-items: center;
+}
+.ikincisatirsag
+{
+    background:linear-gradient(to bottom
+     right,black,white);
+     display: flex;
+    background-color: yellowgreen;
+    width: 50%;
+    height: 200px;
+    margin: 10px 0px;
+    padding-left:50px ;
+    align-items: center;
+}
+
+.resim1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    pointer-events: none;
+    
+}
+
+
+.logo-buton
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to bottom right,black,rgb(27, 190, 190,0.5));
+    
+}
+
 
 
 
