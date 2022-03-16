@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.top
+{
+display: flex;
+width: 100%;
+height: 200px;
+background-color: rgb(251, 253, 251);
+
+}
+.top-left
+{
+    width: 60%;
+    text-align: left;
+    font-size: 50px;
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+    height: 100%;
+    line-height: 200px;
+    padding-left: 60px;
+}
+.top-right
+{
+
+    width: 40%;
+    text-align: right;
+    font-size: 15px;
+    color: rgb(14, 17, 8,0.9);
+    font-weight: bold;
+    height: 100%;
+    line-height: 10px;
+    padding-right: 30px;
+    
+}
+.result
+{
+width: 100%;
+height: 100px;
+background-color: rgb(81, 81, 179);
+text-align: center;
+line-height: 50px;
+font-size: x-large;
+}
+.result-none
+{
+    display: none;
+}
+.content-container
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:rgb(5, 5, 5);
+
+}
+
+
+.content{
+
+   /* background-color: red;*/
+  
+   padding-top: 20px;
+   width: 100%;
+}
+.buton
+{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(5, 5, 5);
+    border:10;
+    border-color: aliceblue;
+    border-style: dashed;
+    color: aliceblue;
+    font-size: 30px;
+   
+}
+.question
+{
+font-size: x-large;
+color: aliceblue;
+height: 90px;
+
+
+}
+label
+{
+    padding-right: 15px;
+}
+
+.radio
+{
+    padding-top: 5px;
+}
+.submit
+{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 30%;
+}
+span
+{
+ color: white;
+ font-family: 'Courier New', Courier, monospace;
+ width: 30px;
+ height: 30px;
+
+}
+.orta-bolumdekiler
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.kullanıcı
+{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+
+

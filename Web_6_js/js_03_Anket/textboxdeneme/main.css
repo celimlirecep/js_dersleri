@@ -1,0 +1,36 @@
+*
+{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    
+}
+.ana-form
+{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom right,rgb(160, 111, 224),rgb(61, 216, 14));
+    border-radius: 30px;
+   
+}
+
+.text
+{
+    background-color: aqua;
+    outline: none;
+    
+}
+
+.buton
+{
+    padding-top: 30px;
+    
+}
+
+.mesaj
+{
+    font-size: x-large;
+}
