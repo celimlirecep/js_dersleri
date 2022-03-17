@@ -7,13 +7,14 @@
 }
 .ana-form
 {
-    width: 400px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background:linear-gradient(to bottom right,rgb(160, 111, 224),rgb(61, 216, 14));
-    border-radius: 30px;
+    border-radius: 15px;
+    width: 400px;
    
 }
 
@@ -33,4 +34,39 @@
 .mesaj
 {
     font-size: x-large;
+}
+.ah{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px ;
+}
+
+.basarili
+{
+    border: 5px rgb(51, 210, 30) solid;
+    outline: none;
+    
+    
+}
+.basarisiz
+{
+    border: 5px rgb(209, 7, 7) solid;
+    outline: none;
+
+}
+
+.tiklanmali
+{
+
+    width: 400px;
+    background-color: black;
+    color: aliceblue;
+   
+}
+.tiklanmaliDefault
+{
+    width: 100px;
+    background-color: rgb(176, 219, 56);
 }

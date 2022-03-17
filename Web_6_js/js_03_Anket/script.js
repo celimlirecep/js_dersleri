@@ -19,17 +19,18 @@ function logoyukle(e)
        
        bastakiResim.remove();
        let html=e.target.children[0];
-       console.log(html);
-        const yeniresim=e.target.children[0];
-        topRight.appendChild(yeniresim);
+       const logoolusturImg=document.createElement("img");
+       const logoolusturDiv=document.createElement("div");
+       logoolusturDiv.setAttribute("class","top-resim");
+       topRight.appendChild(logoolusturDiv);
+       console.log(logoolusturDiv);
+       const srcElemani=e.target.children[0].getAttribute("src");
+       console.log(srcElemani);
+      // console.log(html);
+       // const yeniresim=e.target.children[0];
+        //topRight.appendChild(yeniresim);
 
-        console.log(topRight.children[0]);
-        
-       
-       
-       
-
-       
+      //  console.log(topRight.children[0]);
    }
 }
 
@@ -75,8 +76,10 @@ form.addEventListener("submit",e=>
 
 //*********************************SAAT */
 const clock=document.querySelector(".clock");
+
 function zamaniYaz() {
-    const zaman=new Date();
+    
+const zaman=new Date();
 let saat=zaman.getHours();
 let dakika=zaman.getMinutes();
 let saniye=zaman.getSeconds();
@@ -88,5 +91,5 @@ let saniye=zaman.getSeconds();
 clock.innerHTML=html;
 }
 
-setInterval(zamaniYaz,10);
+setInterval(zamaniYaz,1000);
 
