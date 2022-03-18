@@ -26,6 +26,10 @@ function logoyukle(e)
        console.log(logoolusturDiv);
        const srcElemani=e.target.children[0].getAttribute("src");
        console.log(srcElemani);
+       logoolusturImg.setAttribute("src",`${srcElemani}`);
+       logoolusturImg.setAttribute("class","resimamblem");
+       console.log(logoolusturImg);
+       logoolusturDiv.prepend(logoolusturImg);
       // console.log(html);
        // const yeniresim=e.target.children[0];
         //topRight.appendChild(yeniresim);

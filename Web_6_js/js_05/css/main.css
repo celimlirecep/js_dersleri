@@ -1,0 +1,138 @@
+*
+{
+margin: none;
+padding: none;
+
+
+} 
+body
+{
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left,rgb(132, 132, 216),black);
+}
+#todoBox
+{
+    margin-top: 50px;
+}
+#newTaskBox
+{
+    
+    width: 325px;
+    margin: auto;
+   
+    border-radius: 5px;
+    height: 40px;
+    padding-top: 5px;
+    align-items: center;
+    text-align: center;
+    
+}
+#newTaskTextBox
+{
+    
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    
+    
+}
+#newTaskButton
+{
+    height: 30px;
+    border: 3px solid black;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: color 1s,background-color 1s;
+
+
+}
+#newTaskButton:hover
+{
+    border-color: green;
+    background-color: black;
+    color: white;
+   
+}
+#tasksHeader
+{
+    align-items: center;
+    
+    margin: 30px;
+    font-size: 80px;
+    
+    border-radius: 10px;
+    padding: 0 5px;
+    
+    
+}
+#taskHeaderBox
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+#taskListBox
+{
+    display: flex;
+    flex-direction: column;
+}
+#taskListBox li
+{
+    list-style-type: none;
+    background-color: rgb(7, 7, 7);
+    color: aliceblue;
+    border: 1px solid black;
+    width: auto;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 25px;
+    
+
+}
+.newTask
+{
+    display: flex;
+  
+    border-radius: 6px;
+    
+
+}
+
+
+.ozel
+{
+    pointer-events: none;
+    
+}
+.sillogo
+{
+    width: 30px;
+
+    color:white;
+    font-size: x-large;
+    background-color: black;
+}
+.clearButton
+{
+    background-color: black;
+    border-radius: 6px;
+    padding: right;
+}
+
+.ptask
+{
+    list-style-type: none;
+    background-color: rgb(7, 7, 7);
+    color: aliceblue;
+    border: 1px solid black;
+    width: auto;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 25px;
+
+}
