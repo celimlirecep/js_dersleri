@@ -7,8 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="baslik">Merhaba</h1>
+    <button onclick="degistir()">Tıkla</button>
     
 
     <script src="script.js"></script>
 </body>
+<script>
+    console.log(baslik.textContent)
+function degistir(){
+    const baslik=document.getElementById("baslik");
+    baslik.textContent="Şimdi git";
+    console.log(baslik.textContent)
+
+}
+
+
+</script>
 </html>
