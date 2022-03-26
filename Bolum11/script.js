@@ -71,21 +71,26 @@
 //  a.k();
 
 
-const iller = {
- illlerDizisi: ["istanbul","Ankara","Adıytaman","İstanbul"],
- ad:"recep",
+// const iller = {
+//  illlerDizisi: ["istanbul","Ankara","Adıytaman","İstanbul"],
+//  ad:"recep",
 
+// // yaz(){
+// //     this.illlerDizisi.forEach(function(element) {
+// //         console.log(this);
+// // });
+// // }
 // yaz(){
-//     this.illlerDizisi.forEach(function(element) {
+//     this.illlerDizisi.forEach(element=>   {
 //         console.log(this);
 // });
 // }
-yaz(){
-    this.illlerDizisi.forEach(element=> {
-        console.log(this);
-});
-}
 
-}
+// }
 
-iller.yaz();
+// iller.yaz();
+
+//************************************ */
+
+
+
