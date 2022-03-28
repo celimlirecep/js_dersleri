@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        #text{
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        p{
+            color: white;
+            background-color: black;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="box" ></div>
+    <span id="text">Wissen Akdemie</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex natus suscipit dignissimos at aliquam fugiat similique quam, aspernatur, ipsum odit provident ad debitis ea facilis fuga dolore neque nesciunt odio!</p>
+    <button onclick="IdChange()"> Tıkla</button>
+    <button onclick="ClassChange()"> Tıkla</button>
+    <button onclick="TagChange()"> Tıkla</button>
+    
+
+    <script>
+
+       function IdChange() {
+        $("#text").css("color","yellow");
+       }
+       function ClassChange() {
+        $(".box").css("background-color","yellow");
+       }
+       function TagChange() {
+        $("p").css("color","yellow");
+       }
+
+    </script>
+
+
+</body>
+</html>

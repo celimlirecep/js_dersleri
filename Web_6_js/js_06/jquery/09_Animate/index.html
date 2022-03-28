@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            left: 0px;
+            top: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <button id="refresh">Refresh</button>
+    <br>
+
+    <button id="Animate_1">Animate_1</button>
+    <button id="Animate_2">Animate_2</button>
+    <button id="Animate_3">Animate_3</button>
+    <button id="reset">Reset</button>
+    <div></div>
+ 
+
+    <script>
+        $("#reset").click(function () {
+            $("div").css({
+                display:"block",
+                left:"0px",
+                opacity:"1",
+                top:"20px",
+                height:"200px",
+                width:"200px",
+                borderRadius:"+=100%",
+              
+
+            })
+        })
+        $(document).ready(function () {
+          $("#Animate_1").click(function () {
+              console.log("burda")
+              $("div").animate({
+
+                   left: "100px",
+                   opacity:"0.5",
+                   height:"150px",
+                   width:"toggle",
+                    borderRadius:"+=100%",
+                
+                }
+                 
+              )
+          })
+        })
+    </script>
+    
+</body>
+</html>

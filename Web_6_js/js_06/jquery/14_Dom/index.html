@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body{
+            margin: 20px;
+            font-size: 20px;
+
+        }
+        button{
+            padding: 10px;
+            background-color: rgb(19, 77, 104);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button id="parent">Tüm spam etiketlerinin bir üst ebeveynlerini seç</button>
+    <button id="parents">Tüm spamss etiketlerinin bir üst ebeveynlerini seç</button>
+    <button id="parents-p">Tüm  P-Ebetyleri etiketlerinin bir üst ebeveynlerini seç</button>
+    <button id="parentsUntil">parent until ebeveynlerini seç</button>
+    <button id="children">children</button>
+    <div>
+        Ebeveyn Etiket(div)
+        <p>
+            Ebeveyn Etiket(p)
+            <span style="background-color: aqua;">
+                Çocuk Etiket(span)
+            </span> 
+        </p>
+    </div>
+    <div>
+        Ata Abeveyn Etiket(div)
+        <h3>Çocuk Etiket</h3>
+        <p>cocuk etiketi</p>
+        <p>cocuk etiketi</p>
+        <span>cocuk etiketi(span)</span>
+    </div>
+    <script>
+        $(document).ready(function () {
+           function ClearBorder() {
+            $("html,body").css({
+                "border":"none"
+            });
+            $("div").css({
+                "border":"2px solid lightgrey",
+                color:"red"
+                
+            });
+           }
+           $("#parent").click(function () {
+               ClearBorder();
+               $("span").parent().css({
+                   color:"red",
+                   border:" 10px solid blue"
+               })
+           })
+           $("#parents").click(function () {
+               ClearBorder();
+               $("span").parents().css({
+                   color:"red",
+                   border:" 10px solid red"
+               })
+           })
+           $("#parents-p").click(function () {
+               ClearBorder();
+               $("span").parents("p").css({
+                   color:"red",
+                   border:" 10px solid red"
+               })
+           })
+           $("#parentsUntil").click(function () {
+               ClearBorder();
+               $("span").parentsUntil("div").css({
+                   color:"red",
+                   border:" 10px solid yellow"
+               })
+           })
+           $("#children").click(function () {
+               ClearBorder();
+               $("div").children().css({
+                color:"white",
+                backgroundcolor:"black",
+                   border:" 10px solid yellow"
+               })
+           })
+        })
+    </script>
+    
+</body>
+</html>
