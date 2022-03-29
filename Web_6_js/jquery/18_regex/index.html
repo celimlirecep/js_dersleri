@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <label >Sadece Rakam giriniz: </label>
+    <input type="text" id="rakam">
+    <label >Sadece harf giriniz: </label>
+    <input type="text" id="harf">
+    <span id="errorMessage"></span>
+        <script>
+            $(document).ready(function () {
+                $("#rakam").keyup(function (tus) {
+                 if (this.value.match(/[^0-9]/g)) {
+                     console.log("a")
+                    this.value= this.value.replace(/[^0-9]/g,"");
+                 }
+                })
+                $("#harf").keyup(function (tus) {
+                 if (this.value.match(/[^a-zA-Z$]/g)) {
+                    this.value= this.value.replace(/[^a-zA-Z$]/g,"");
+                 }
+                 else{
+                     return false;
+                })
+            })
+        </script>
+</body>
+</html>

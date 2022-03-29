@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+      .yeni{
+          color: red;
+      }
+  </style>
+  
+</head>
+<body>
+    <button >buton</button>
+    <div id="box">
+       <p>
+        burası pargraf
+        <span style="color: blue;"> buda span</span>
+       </p>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+                $("button").click(function () {
+                    var result=$("span").parent().is("p");
+                    if (result) {
+                       console.log("burda")
+                        $("span").addClass("yeni")
+                    }
+               
+                })
+            
+            
+          
+        })
+    </script>
+    
+</body>
+</html>
