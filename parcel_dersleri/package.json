@@ -1,0 +1,12 @@
+{
+  "name": "parcel_dersleri",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev":"parcel serve ./src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
