@@ -1,0 +1,12 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+$ana-renk:black;
+$ana-yazi-renk:white;
+body{
+    background-color: $ana-renk;
+    color:$ana-yazi-renk;
+}
+h1{
+    font-size:8rem;
+}
